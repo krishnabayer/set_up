@@ -17,9 +17,13 @@ data_scaler = load('./scaler.joblib')
 
 
 def predict_breast_cancer(feature_list):
+    print('1')
     inference_data = feature_list
+    print('2')
     scaled_data = data_scaler.transform([inference_data])
+    print('3')
     prediction = svc_model.predict(scaled_data)
+    print('4')
     if prediction[0]==1:
         print('breast cancer identified')
     else:
