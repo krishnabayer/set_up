@@ -11,8 +11,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 from joblib import load, dump
 
 
-svc_model = load('svc_model.joblib')
-data_scaler = load('scaler.joblib')
+svc_model = load('./svc_model.joblib')
+data_scaler = load('./scaler.joblib')
 
 
 
